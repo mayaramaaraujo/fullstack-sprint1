@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Riachuelo</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -18,28 +20,32 @@
     </script>
   </head>
   <body>
-    <header>
-      <h1>
-        <img src="assets/riachuelo.svg" alt="" />
+    <header class="header">
+      <h1 class="header__title">
+        <img class="header__img" src="assets/riachuelo.svg" alt="" />
       </h1>
-      <input type="search" placeholder="O quê você está procurando" />
-      <nav>
-        <ul>
-          <li><a href="">Novidades</a></li>
-          <li><a href="">Feminimo</a></li>
-          <li><a href="">Masculino</a></li>
-          <li><a href="">Infantil</a></li>
-          <li><a href="">Moda Íntima</a></li>
-          <li><a href="">Calçados</a></li>
-          <li><a href="">Acessórios e Relógios</a></li>
-          <li><a href="">Beleza e Perfume</a></li>
-          <li><a href="">Casa Riachuelo</a></li>
-          <li><a href="">Eletrônicos</a></li>
-          <li><a href="">Personagens</a></li>
-          <li><a href="">Outlet</a></li>
+      <div class="header__search">
+        <span class="header__search__icon"><img src="./assets/search-icon.svg" alt="Ícone de busca"></span>
+        <input class="header__search__input" type="search" placeholder="O que você está procurando?" />
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav___list">
+          <li><a href="#">Novidades</a></li>
+          <li><a href="#">Feminimo</a></li>
+          <li><a href="#">Masculino</a></li>
+          <li><a href="#">Infantil</a></li>
+          <li><a href="#">Moda Íntima</a></li>
+          <li><a href="#">Calçados</a></li>
+          <li><a href="#">Acessórios e Relógios</a></li>
+          <li><a href="#">Beleza e Perfume</a></li>
+          <li><a href="#">Casa Riachuelo</a></li>
+          <li><a href="#">Eletrônicos</a></li>
+          <li><a href="#">Personagens</a></li>
+          <li><a href="#">Outlet</a></li>
         </ul>
       </nav>
     </header>
+    <hr>
     <main>
       <section class="breadcrumbs">
         <nav>
