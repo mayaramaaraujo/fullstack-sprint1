@@ -1,0 +1,26 @@
+.filters {
+  margin: 0rem 3rem;
+  padding: 0.5rem 0rem;
+  border-bottom: 1px solid $light-gray;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+
+    color: $black;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+
+  &__list > li:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+  @include for-phone-only { 
+    display: none;
+  }
+}

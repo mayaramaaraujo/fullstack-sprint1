@@ -1,0 +1,29 @@
+.breadcrumbs {
+  margin: 0rem 3rem;
+  padding: 1rem 0rem;
+  border-bottom: 1px solid $light-gray;
+
+  &__list {
+    display: flex;
+    color: $gray;
+    font-weight: bold;
+  }
+
+  &__list > li > a,  &__list > li > a:active, &__list > li > a:visited {
+    text-decoration: none;
+    color: $gray;
+  }
+
+  &__list > li:last-child {
+    color: $black;
+  }
+
+  &__list li:not(:last-child)::after {
+    content: "/";
+    margin: 0 1rem;
+  }
+  
+  @include for-phone-only { 
+    display: none;
+  }
+}

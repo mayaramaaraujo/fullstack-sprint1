@@ -1,0 +1,41 @@
+.products {
+  margin: 0rem 3rem;
+  height: auto;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &___description {
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 400;
+    }
+
+    &___price {
+      font-weight: 800;
+      text-align: center;
+      // color: red;
+    }
+  }
+
+  &__list > li {
+    width: 23%;
+    margin-right: 2%;
+  }
+
+  &__list {
+    &___img {
+      width: 100%;
+    }
+  }
+
+  @include for-phone-only {
+    margin: 7rem 0rem 0rem 0rem;
+
+    &__list > li {
+      width: 48%;
+      margin: 1%;
+    }
+  }
+}
