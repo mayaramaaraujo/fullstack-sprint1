@@ -14,4 +14,4 @@ body {
 	@media (min-width: 1200px) { @content };
 }
 
-@import 'header', 'breadcrumbs', 'filters', 'products';
+@import 'header', 'breadcrumbs', 'filters', 'products', 'footer';

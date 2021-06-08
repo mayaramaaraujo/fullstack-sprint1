@@ -186,18 +186,29 @@
       </section>
     </main>
     <footer>
-      <div class="offers">
-        <p>Receba ofertas e novidades por e-mail</p>
-        <form action="/">
-          <input type="email" placeholder="Digite aqui seu e-mail" />
-          <button type="submit">Cadastrar</button>
-        </form>
-      </div>
-      <div class="mobile-apps">
-        <p>Baixe nosso App</p>
-        <img src="assets/google-play.webp" alt="Google Play" />
-        <img src="assets/app-store.webp" alt="App Store" />
-      </div>
+      <section class="footer__header">
+        <div class="offers">
+          <p>Receba ofertas e novidades por e-mail</p>
+          <form action="/" class="offers__form">
+            <select name="Interesses" id="">
+              <option value="Interesses">Interesses</option>
+              <option value="">Selecionar todos</option>
+              <option value="Novidades">Novidades</option>
+              <option value="Feminino">Feminino</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Infantil">Infantil</option>
+              <option value="Moda íntima">Moda íntima</option>
+            </select>
+            <input class="offers__form___input" type="email" disabled placeholder="Digite aqui seu e-mail" />
+            <button class="offers__form___button" type="submit" disabled>Cadastrar</button>
+          </form>
+        </div>
+        <div class="mobile-apps">
+          <p>Baixe nosso App</p>
+          <img src="assets/google-play.webp" alt="Google Play" />
+          <img src="assets/app-store.webp" alt="App Store" />
+        </div>
+      </section>
       <div class="contacts">
         <div>
           <img width="50px" src="assets/ico-attendance.svg" alt="Atendimento" />
