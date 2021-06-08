@@ -48,7 +48,7 @@ body {
     background: url("../assets/close-icon.svg") no-repeat top;
   }
   .header__title___icon:hover::after {
-    content: "close";
+    content: "fechar";
   }
   .header__title___menu, .header__title___close {
     width: 30px;
