@@ -8,15 +8,58 @@ body {
   align-items: center;
   margin: 0% 2.5rem;
 }
+@media (max-width: 767.98px) {
+  .header {
+    margin: 0% 5%;
+  }
+}
 .header__title {
-  padding: 1.5rem;
+  width: 100%;
+  padding: 2rem;
+  background: url("../assets/riachuelo.svg") no-repeat center;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 767.98px) {
+  .header__title {
+    padding: 1.2rem;
+    background: url("../assets/rchlo.svg") no-repeat center;
+  }
+  .header__title___icon {
+    width: 30px;
+    height: 35px;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    background: url("../assets/menu.svg") no-repeat top;
+    color: #000;
+  }
+  .header__title___icon::after {
+    content: "menu";
+  }
+  .header__title___icon:hover {
+    background: url("../assets/close-icon.svg") no-repeat top;
+  }
+  .header__title___icon:hover::after {
+    content: "close";
+  }
+  .header__title___menu, .header__title___close {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .header__title > sub {
+    color: #ccc;
+    font-size: 0.6rem;
+  }
 }
 .header__search {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 2.5rem;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   outline: 0;
@@ -55,6 +98,11 @@ body {
   align-items: center;
   flex-wrap: wrap;
   height: 2.5rem;
+}
+@media (max-width: 767.98px) {
+  .header__nav___list {
+    display: none;
+  }
 }
 .header__nav___list > li > a {
   text-decoration: none;

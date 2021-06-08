@@ -12,8 +12,59 @@ $black: #000;
   align-items: center;
   margin: 0% $container-margin;
 
+  @include for-phone-only { 
+    margin: 0% 5%;
+  }
+
   &__title {
-    padding: 1.5rem;
+    width: 100%;
+    padding: 2rem;
+
+    background: url("../assets/riachuelo.svg") no-repeat center;
+
+    display: flex;
+    flex-direction: column;
+
+    @include for-phone-only {
+      padding: 1.2rem;
+
+      background: url("../assets/rchlo.svg") no-repeat center;
+
+      &___icon {
+        width: 30px;
+        height: 35px;
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        background: url('../assets/menu.svg') no-repeat top;
+        color: #000;
+      }
+
+      &___icon::after {
+        content: "menu";
+      }
+
+      &___icon:hover {
+        background: url('../assets/close-icon.svg') no-repeat top;
+      }
+
+      &___icon:hover::after {
+        content: "close";
+      }
+
+      &___menu, &___close {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  &__title > sub {
+    @include for-phone-only {
+      color: $light-gray;
+      font-size: 0.6rem;
+    }
   }
 
   &__search {
@@ -22,7 +73,6 @@ $black: #000;
     align-items: center;
 
     width: 100%;
-    min-height: 2.5rem;
 
     border: 1px solid $light-gray;
     border-radius: 0.5rem;
@@ -73,6 +123,10 @@ $black: #000;
       align-items: center;
       flex-wrap: wrap;
       height: 2.5rem;
+
+      @include for-phone-only {
+        display: none;
+      }
     }
 
     &___list > li > a {
